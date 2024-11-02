@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckMyVAT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Check my VAT</h1>
+        <p><strong>This webiste checks if your company VAT number is valid.</strong></p>
+        <form id="vatForm">
+            <label for="country">Country Code:</label>
+            <input type="text" id="country" name="country" placeholder="PT" required>
+            
+            <label for="vatNumber">VAT Number:</label>
+            <input type="text" id="vatNumber" name="vatNumber" placeholder="512345678" required>
+            
+            <button type="submit">Check my VAT!</button>
+        </form>
+
+        <div id="result" class="result">
+            <!-- Validation results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
